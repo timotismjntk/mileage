@@ -26,13 +26,13 @@ class penghitungJarak {
                 this.x++
             }
         }
-        //Mengubah waktu menjadi menit
-        this.waktuAwal = this.arrAwal[0] * (60*60) + this.arrAwal[1] * 60 + this.arrAwal[2] // jam diubah ke menit dikali 3600/ 60 * 60
-        this.waktuAwal /= 60
+        //Mengubah waktu menjadi detik
+        this.waktuAwal = this.arrAwal[0] * (60*60) + this.arrAwal[1] * 60 + this.arrAwal[2] // jam diubah ke detik dikali 3600/ 60 * 60
+        this.waktuAwal /= 60 //dibagi 60 untuk mengubah kemenit kembali
         
-        //Mengubah waktu menjadi menit
+        //Mengubah waktu menjadi detik
         this.waktuAkhir = this.arrAkhir[0] * (60*60) + this.arrAkhir[1] * 60 + this.arrAkhir[2] // jam diubah ke detik dikali 3600/ 60 * 60
-        this.waktuAkhir /= 60
+        this.waktuAkhir /= 60 //dibagi 60 untuk mengubah kemenit kembali
 
         //5 menit kemudian kecepatan dinaikkan 2m/detik
         this.waktuAwal += 5
